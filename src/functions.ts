@@ -22,7 +22,7 @@ function greet(name: string): void {
  */
 function isOdd(n: number): boolean {
   // Your code here
-
+if (n % 2 !== 0) { return true}
   return false; // replace false with what you see is fit
 }
 
@@ -37,8 +37,11 @@ function isOdd(n: number): boolean {
  */
 function oddsSmallerThan(n: number): number {
   // Your code here
-
-  return -1; // replace -1 with what you see is fit
+// if (n % 2 !== 0) {}
+var counter  = 0
+if(n % 2 !== 0) {return counter++}
+// console.log(counter)
+  return n; // replace -1 with what you see is fit
 }
 
 /**
@@ -54,7 +57,8 @@ function oddsSmallerThan(n: number): number {
 function squareOrDouble(n: number): number {
   // Your code here
 
-  return -1; // replace -1 with what you see is fit
+if (n % 2 !== 0) {return Math.pow(n,2)}
+return 2 * n
 }
 
 export { greet, isOdd, oddsSmallerThan, squareOrDouble };
