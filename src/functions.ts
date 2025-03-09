@@ -8,6 +8,7 @@
  */
 function greet(name: string): void {
   // Your code here
+  console.log("Hello " + name)
 }
 
 /**
